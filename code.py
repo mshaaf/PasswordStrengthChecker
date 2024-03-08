@@ -3,7 +3,7 @@ import re
 import random
 import string
 
-
+#The 200 most common passwords of 2022 according to Nord VPN
 cm_passwords = [
     "123456", "admin", "12345678", "123456789", "1234", "12345", "password", "123", "Aa123456", "1234567890",
     "1234567", "123123", "111111", "Password", "12345678910", "000000", "admin123", "1111", "P@ssw0rd", "root",

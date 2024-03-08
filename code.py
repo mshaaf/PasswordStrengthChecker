@@ -82,7 +82,7 @@ def main():
     
     strength_score, new_password = pwd_str(password)
     if strength_score < 7:
-         print(f"Your password strength rating is {round(strength_score, 2)}. Your password is weak. We have generated a new password for you.") 
+        print(f"Your password strength rating is {round(strength_score, 2)}. Your password is weak. We have generated a new password for you.") 
         print("Generated password:", new_password)
     else:
         print("Your password strength rating is ", round(strength_score, 2))

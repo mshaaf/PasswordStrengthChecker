@@ -37,6 +37,9 @@ def is_common_password(password):
    
 
 def pwd_str(password):
+    if len(set(password)) <= 4:
+        return 1, password  # Return a low score and the original password
+    
     # Length score
     length_score = min(len(password) / 12, 1) * 5
     
@@ -59,6 +62,9 @@ def pwd_str(password):
 
     
 def time_crack(password, attempts = 1000000000):
+    if len(set(password)) <= 4:
+        return "Your password is extremely easy to guess because you are using the same characters"
+    
     total_comb = 62 ** len(password)
     sec_crack = total_comb / attempts
     
